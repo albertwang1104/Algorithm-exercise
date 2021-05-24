@@ -40,5 +40,5 @@ void bubble(int *array){
  	     	}
 	    }
 	}
-    }
+}
 

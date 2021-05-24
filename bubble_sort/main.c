@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main() {
 	int array[10] =  {1,5,9,3,6,8,2,4,7};
@@ -33,13 +32,13 @@ void swap(int a, int b){
 }
 
 void bubble(int *array){
-	int i=0,j=0,temp=0;
+    int i=0,j=0,temp=0;
     for(i = 0; i < 9; i++) {
         for(j = 0; j < 9; j++) {
             if(array[j+1] < array[j]) {
             	swap(array[j+1],array[j]);
  	     	}
-	   }
+	    }
 	}
-}
+    }
 

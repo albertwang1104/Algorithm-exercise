@@ -29,7 +29,7 @@ void bubble_sort(int *arr, int len) {
 ```
 #### 動畫
 
-![](gif\bubbleSort.gif)
+![](\gif\bubbleSort.gif)
 
 ----
 

@@ -13,20 +13,25 @@ void swap(int *a, int *b) {
     *b=temp;
 }
 ```
-
+----
 ### 泡沫排序(bubble sort)
 ```C
 void bubble_sort(int *arr, int len) {
 	int i=0,j=0;
     for(i = 0; i < len; i++) {
         for(j = 0; j < len-1-i; j++) {
-            if(arr[j+1] < arr[j]) {
-            	swap(&arr[j+1], &arr[j]);
+            if(arr[j+1] < arr[j]) {    // 相鄰兩元素比較
+            	swap(&arr[j+1], &arr[j]);	// 如果第一個比第二個大，互相交換
  	     	}
 	    }
 	}
 }
 ```
+#### 動畫
+
+![](gif\bubbleSort.gif)
+
+----
 
 ### 選擇排序(selection sort)
 ```C
@@ -53,7 +58,7 @@ void insertion_sort(int *arr, int len) {
 	for(i = 1; i < len; i++) {
 		preIndex=i-1;
 		n=arr[i];
-		while(n < arr[preIndex] && preIndex >= 0) {    // 當
+		while(n < arr[preIndex] && preIndex >= 0) {    // 將 n 插入其位置
 			arr[preIndex+1]=arr[preIndex];
 			preIndex-=1;
 		}

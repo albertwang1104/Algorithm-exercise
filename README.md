@@ -31,7 +31,7 @@ void swap(int *a, int *b) {
 第n筆資料，平均比較 (n-1)/2 次
 
 #### 動畫
-![](\gif\bubbleSort.gif)
+![](/gif/bubbleSort.gif)
 
 #### 程式碼
 ```C
@@ -50,7 +50,7 @@ void BubbleSort(int arr[], int len) {
 ### **選擇排序 (Selection Sort)**
 
 #### 動畫
-![](\gif\selectionSort.gif)
+![](/gif/selectionSort.gif)
 
 #### 程式碼
 ```C
@@ -73,7 +73,7 @@ void SelectionSort(int arr[], int len) {
 ### **插入排序(Insertion Sort)**
 
 #### 動畫
-![](\gif\insertionSort.gif)
+![](/gif/insertionSort.gif)
 
 #### 程式碼
 ```c
@@ -94,7 +94,7 @@ void InsertionSort(int arr[], int len) {
 ### **合拼排序 (Merge Sort)**
 
 #### 動畫
-![](\gif\mergeSort.gif)
+![](/gif/mergeSort.gif)
 
 #### 程式碼
 ```c
@@ -151,5 +151,5 @@ int n1 = m-l+1, n2 = r-m;			// 找出左右兩陣列的大小
 ### **快速排序 (Quick Sort)**
 
 #### 動畫
-![](\gif\quickSort.gif)
+![](/gif/quickSort.gif)
 

@@ -6,12 +6,12 @@ int main() {
 	int i=0; 
 	
     printf("before sort\n");
-   	PrintArray(array, 10);
+	PrintArray(array, 10);
 	printf("\n");
 	
 	printf("\n");
     
-    InsertionSort(array, 10);
+    QuickSort(array, 0, 9);
 
     printf("after sort\n");
     PrintArray(array, 10);
@@ -21,12 +21,35 @@ int main() {
 
 void PrintArray(int arr[], int len){
 	int i;
-	for(i = 0; i < len; i++)
+	for (i = 0; i < len; i++)
 		printf("%d ", arr[i]);
 }
 
+void QuickSort(int arr[], int front, int end) {
+	if (front < end) {
+		int pivot = Partition(arr, front, end);
+		QuickSort(arr, front, pivot-1);
+		QuickSort(arr, pivot+1, end);
+	}
+}
+
+int Partition(int arr[], int front, int end) {
+	int pivot = arr[end];
+	int i = front-1, j;
+	
+	for (j = front; j < end; j++) {
+		if (arr[j] < pivot) {
+			i++;
+			swap(&arr[i], &arr[j]);
+		}
+	}
+	i++;
+	swap(&arr[i], &arr[end]);
+	return i;
+}
+
 void MergeSort(int arr[], int left, int right) {
-	if(left < right) {
+	if (left < right) {
 		int middle = (left+right)/2;
 		
 		MergeSort(arr, left, middle);
